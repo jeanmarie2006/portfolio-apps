@@ -139,3 +139,29 @@
   const pick = /iPhone|iPad|iPod/.test(ua) ? 'ios' : /Android/.test(ua) ? 'android' : null
   if (pick) $(`.tab[data-tab="${pick}"]`)?.click()
 })()
+
+/* ---- e-mail : ouvre Gmail sur ordinateur, l'application de messagerie sur mobile, et permet de copier l'adresse ---- */
+(() => {
+  const mail = document.querySelector('.js-mail')
+  const copy = document.querySelector('.js-copy')
+  const mobile = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent)
+  if (mail && !mobile) {
+    const to = encodeURIComponent(mail.dataset.mail)
+    mail.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${to}&su=${encodeURIComponent('Prise de contact depuis votre portfolio')}`
+    mail.target = '_blank'
+    mail.rel = 'noopener'
+    mail.title = 'Ouvre Gmail pour écrire à ' + mail.dataset.mail
+  }
+  if (copy) {
+    const label = copy.textContent
+    copy.addEventListener('click', async () => {
+      const text = copy.dataset.copy
+      try { await navigator.clipboard.writeText(text) } catch (e) {
+        const t = document.createElement('textarea'); t.value = text; t.style.position = 'fixed'; t.style.opacity = '0'
+        document.body.appendChild(t); t.select(); try { document.execCommand('copy') } catch (_) {} t.remove()
+      }
+      copy.textContent = 'Adresse copiée ✓'
+      setTimeout(() => { copy.textContent = label }, 2200)
+    })
+  }
+})()
