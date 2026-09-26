@@ -141,7 +141,7 @@
 })()
 
 /* ---- e-mail : ouvre Gmail sur ordinateur, l'application de messagerie sur mobile, et permet de copier l'adresse ---- */
-(() => {
+;(() => {
   const mail = document.querySelector('.js-mail')
   const copy = document.querySelector('.js-copy')
   const mobile = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent)
