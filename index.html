@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sedjame Vianney — Applications web</title>
+<meta name="description" content="Neuf applications web complètes, testées, en ligne et installables : Laravel, React, MySQL. Portfolio de Sedjame Vianney, développeur web à Cotonou (Bénin).">
+<meta property="og:title" content="Sedjame Vianney — 9 applications web en ligne">
+<meta property="og:description" content="Du cahier des charges à la mise en ligne : Laravel, React, MySQL. Applications installables sur mobile, tablette et ordinateur.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#06070b">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2306070b'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-style='italic' text-anchor='middle' fill='%23a78bfa'%3ESV%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="spot" id="spot" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Sedjame Vianney, accueil"><span class="brand__mark">SV</span><span class="brand__txt">Sedjame Vianney</span></a>
+  <nav class="nav__links" aria-label="Navigation principale">
+    <a href="#projets">Projets</a>
+    <a href="#methode">Méthode</a>
+    <a href="#coulisses">Coulisses</a>
+    <a href="#installer">Installer</a>
+    <a href="#apropos">À propos</a>
+  </nav>
+  <a class="btn btn--main btn--sm" href="#contact" data-magnetic>Me contacter</a>
+</header>
+
+<main id="top">
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero__copy">
+    <p class="eyebrow"><i class="pulse"></i>Disponible · Cotonou &amp; Calavi, Bénin</p>
+    <h1 class="hero__title">
+      <span class="line"><span>Neuf applications web,</span></span>
+      <span class="line"><span>du <em>cahier des charges</em></span></span>
+      <span class="line"><span>à la mise en ligne.</span></span>
+    </h1>
+    <p class="hero__lead">Je m’appelle <strong>Sedjame Vianney</strong>. Je conçois, teste et déploie des applications complètes avec <strong>Laravel</strong>, <strong>React</strong> et <strong>MySQL</strong>. Toutes sont en ligne et s’installent comme une application native sur mobile, tablette et ordinateur.</p>
+    <div class="hero__cta">
+      <a class="btn btn--main btn--lg" href="#projets" data-magnetic>Explorer les 9 applications <span aria-hidden="true">↓</span></a>
+      <a class="btn btn--ghost btn--lg" href="#contact">Discutons de votre projet</a>
+    </div>
+  </div>
+
+  <div class="hero__stage" id="stage" aria-label="Aperçu des applications">
+    <div class="stage__blob stage__blob--a" aria-hidden="true"></div>
+    <div class="stage__blob stage__blob--b" aria-hidden="true"></div>
+    <div class="frame frame--hero" data-tilt data-tilt-max="7">
+      <div class="frame__bar"><i></i><i></i><i></i><span class="frame__url" id="stageUrl"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><b>budgetclair-nine.vercel.app</b></span></div>
+      <div class="frame__screen"><img class="slide is-on" src="assets/shots/budgetclair-accueil.webp" alt="" data-name="BudgetClair" data-a="#10b981" data-b="#22d3ee" data-url="budgetclair-nine.vercel.app" width="1280" height="889"><img class="slide" src="assets/shots/cvflash-accueil.webp" alt="" data-name="CVFlash" data-a="#6366f1" data-b="#f472b6" data-url="cvflash.vercel.app" width="1280" height="889" loading="lazy"><img class="slide" src="assets/shots/avispro-accueil.webp" alt="" data-name="AvisPro Bénin" data-a="#e11d48" data-b="#fb7185" data-url="mes-apps.wuaze.com/avispro" width="1280" height="889" loading="lazy"><img class="slide" src="assets/shots/stockfacile-accueil.webp" alt="" data-name="StockFacile" data-a="#0ea5e9" data-b="#22d3ee" data-url="mes-apps.wuaze.com/stockfacile" width="1280" height="889" loading="lazy"><img class="slide" src="assets/shots/covoitbenin-accueil.webp" alt="" data-name="CovoitBénin" data-a="#f59e0b" data-b="#f97316" data-url="mes-apps.wuaze.com/covoitbenin" width="1280" height="889" loading="lazy"><img class="slide" src="assets/shots/fitslot-accueil.webp" alt="" data-name="FitSlot" data-a="#f97316" data-b="#ef4444" data-url="mes-apps.wuaze.com/fitslot" width="1280" height="889" loading="lazy"><img class="slide" src="assets/shots/facturo-accueil.webp" alt="" data-name="Facturo" data-a="#3b82f6" data-b="#38bdf8" data-url="mes-apps.wuaze.com/facturo" width="1280" height="889" loading="lazy"><img class="slide" src="assets/shots/apprendo-accueil.webp" alt="" data-name="Apprendo" data-a="#8b5cf6" data-b="#a78bfa" data-url="mes-apps.wuaze.com/apprendo" width="1280" height="889" loading="lazy"><img class="slide" src="assets/shots/flowboard-accueil.webp" alt="" data-name="Flowboard" data-a="#14b8a6" data-b="#34d399" data-url="mes-apps.wuaze.com/flowboard" width="1280" height="889" loading="lazy"></div>
+    </div>
+    <div class="float float--a" aria-hidden="true"><span class="float__dot"></span><div><b id="stageName">BudgetClair</b><small>en ligne maintenant</small></div></div>
+    <div class="float float--b" aria-hidden="true"><b>82</b><small>tests automatisés</small></div>
+    <div class="float float--c" aria-hidden="true"><b>⬇ PWA</b><small>installable</small></div>
+    <div class="stage__dots" id="stageDots" role="tablist" aria-label="Choisir une application"></div>
+  </div>
+</section>
+
+<section class="stats" aria-label="Chiffres clés">
+  <div class="stat"><b data-count="9">0</b><span>applications en ligne</span></div>
+  <div class="stat"><b data-count="188">0</b><span>routes et points d’accès</span></div>
+  <div class="stat"><b data-count="82">0</b><span>tests automatisés</span></div>
+  <div class="stat"><b data-count="3">0</b><span>types d’appareils : mobile, tablette, PC</span></div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="marquee__track"><span>Laravel 12</span><span>React 19</span><span>Vite</span><span>Tailwind CSS 4</span><span>MySQL</span><span>Sanctum</span><span>PWA</span><span>Service Worker</span><span>DomPDF</span><span>Recharts</span><span>Leaflet</span><span>FullCalendar</span><span>dnd-kit</span><span>PHPUnit</span><span>Vitest</span><span>Puppeteer</span><span>Postman</span><span>Vercel</span><span>GitHub</span><span>Laravel 12</span><span>React 19</span><span>Vite</span><span>Tailwind CSS 4</span><span>MySQL</span><span>Sanctum</span><span>PWA</span><span>Service Worker</span><span>DomPDF</span><span>Recharts</span><span>Leaflet</span><span>FullCalendar</span><span>dnd-kit</span><span>PHPUnit</span><span>Vitest</span><span>Puppeteer</span><span>Postman</span><span>Vercel</span><span>GitHub</span></div></div>
+
+<!-- ============ PROJETS ============ -->
+<section class="section works" id="projets">
+  <div class="section__head reveal">
+    <p class="eyebrow">Sélection · 2026</p>
+    <h2 class="title">Des produits, <em>pas des maquettes.</em></h2>
+    <p class="section__lead">Chaque application suit un cahier des charges, gère de vrais cas limites (rôles, capacités, paiements simulés, PDF) et a été testée de bout en bout avant d’être déployée. Cliquez sur une capture pour la parcourir.</p>
+  </div>
+  
+    <article class="case" id="budgetclair" style="--a:#10b981;--b:#22d3ee" data-name="BudgetClair">
+      <div class="case__glow" aria-hidden="true"></div>
+      <div class="case__grid">
+        <div class="case__text reveal">
+          <div class="case__top"><span class="case__no">01<i>/09</i></span><span class="case__kind">Front-end · React</span></div>
+          <div class="case__brand"><img src="assets/icons/budgetclair.png" alt="" width="56" height="56"><h3>BudgetClair</h3></div>
+          <p class="case__tag">Voyez enfin où passe votre argent.</p>
+          <p class="case__desc">Suivi de budget personnel : chaque dépense est classée, chaque mois est lu d’un coup d’œil. Tout fonctionne dans le navigateur, sans serveur, données conservées sur l’appareil.</p>
+          <ul class="case__feats"><li>Tableau de bord : solde, revenus, dépenses, taux d’épargne</li><li>Camembert par catégorie et courbe d’évolution sur 6 mois</li><li>Budgets mensuels avec alerte orange à 80 %, rouge au dépassement</li><li>FCFA / EUR / USD, transactions récurrentes, export CSV, mode sombre</li></ul>
+          <ul class="chips" aria-label="Technologies"><li>React 19</li><li>Vite</li><li>Tailwind 4</li><li>Recharts</li><li>LocalStorage</li><li>Vitest</li></ul>
+          <dl class="case__metrics"><div><dd data-metric>5</dd><dt>tests Vitest</dt></div><div><dd data-metric>3</dd><dt>devises</dt></div><div><dd data-metric>PWA</dd><dt>hors connexion</dt></div></dl>
+          <div class="case__cta">
+            <a class="btn btn--main" href="https://budgetclair-nine.vercel.app" target="_blank" rel="noopener" data-magnetic>Ouvrir la démo <span aria-hidden="true">↗</span></a>
+            <a class="btn btn--ghost" href="https://budgetclair-nine.vercel.app/installer" target="_blank" rel="noopener">⬇ Installer</a>
+            <a class="btn btn--ghost" href="https://github.com/jeanmarie2006/budgetclair" target="_blank" rel="noopener">Code source</a>
+          </div>
+          <p class="case__host">Hébergé sur Vercel · installable sur mobile, tablette et ordinateur</p>
+        </div>
+        <div class="case__visual reveal">
+          <div class="frame" data-tilt>
+            <div class="frame__bar"><i></i><i></i><i></i><span class="frame__url"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>budgetclair-nine.vercel.app</span></div>
+            <div class="frame__screen"><img class="frame__img" src="assets/shots/budgetclair-accueil.webp" alt="Capture de BudgetClair : Accueil" loading="lazy" width="1280" height="889"></div>
+          </div>
+          <p class="frame__cap" aria-live="polite">Accueil</p>
+          <div class="thumbs" role="group" aria-label="Captures de BudgetClair"><button class="thumb is-on" type="button" data-src="assets/shots/budgetclair-accueil.webp" data-cap="Accueil" aria-label="Voir : Accueil"><img src="assets/shots/budgetclair-accueil.webp" alt="" loading="lazy" width="160" height="111"><span>Accueil</span></button><button class="thumb" type="button" data-src="assets/shots/budgetclair-dashboard.webp" data-cap="Tableau de bord" aria-label="Voir : Tableau de bord"><img src="assets/shots/budgetclair-dashboard.webp" alt="" loading="lazy" width="160" height="111"><span>Tableau de bord</span></button><button class="thumb" type="button" data-src="assets/shots/budgetclair-installer.webp" data-cap="Installation" aria-label="Voir : Installation"><img src="assets/shots/budgetclair-installer.webp" alt="" loading="lazy" width="160" height="111"><span>Installation</span></button></div>
+        </div>
+      </div>
+    </article>
+    <article class="case" id="cvflash" style="--a:#6366f1;--b:#f472b6" data-name="CVFlash">
+      <div class="case__glow" aria-hidden="true"></div>
+      <div class="case__grid">
+        <div class="case__text reveal">
+          <div class="case__top"><span class="case__no">02<i>/09</i></span><span class="case__kind">Front-end · React</span></div>
+          <div class="case__brand"><img src="assets/icons/cvflash.png" alt="" width="56" height="56"><h3>CVFlash</h3></div>
+          <p class="case__tag">Un CV impeccable en dix minutes.</p>
+          <p class="case__desc">Générateur de CV avec aperçu A4 en direct, trois modèles soignés, score de qualité sur 100 et export PDF. Le partage par lien public se fait sans serveur : les données sont encodées dans l’adresse.</p>
+          <ul class="case__feats"><li>Formulaire multi-étapes et aperçu en temps réel avec repères de pages</li><li>Modèles Nuit, Élégant et Minimal (compatible ATS), couleur au choix</li><li>Score de qualité et suggestions de formulation en un clic</li><li>Export PDF (jsPDF) ou impression, plusieurs CV enregistrés</li></ul>
+          <ul class="chips" aria-label="Technologies"><li>React 19</li><li>react-hook-form</li><li>jsPDF</li><li>html2canvas-pro</li><li>Tailwind 4</li><li>Vitest</li></ul>
+          <dl class="case__metrics"><div><dd data-metric>6</dd><dt>tests Vitest</dt></div><div><dd data-metric>3</dd><dt>modèles</dt></div><div><dd data-metric>PDF</dd><dt>export direct</dt></div></dl>
+          <div class="case__cta">
+            <a class="btn btn--main" href="https://cvflash.vercel.app" target="_blank" rel="noopener" data-magnetic>Ouvrir la démo <span aria-hidden="true">↗</span></a>
+            <a class="btn btn--ghost" href="https://cvflash.vercel.app/installer" target="_blank" rel="noopener">⬇ Installer</a>
+            <a class="btn btn--ghost" href="https://github.com/jeanmarie2006/cvflash" target="_blank" rel="noopener">Code source</a>
+          </div>
+          <p class="case__host">Hébergé sur Vercel · installable sur mobile, tablette et ordinateur</p>
+        </div>
+        <div class="case__visual reveal">
+          <div class="frame" data-tilt>
+            <div class="frame__bar"><i></i><i></i><i></i><span class="frame__url"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>cvflash.vercel.app</span></div>
+            <div class="frame__screen"><img class="frame__img" src="assets/shots/cvflash-accueil.webp" alt="Capture de CVFlash : Accueil" loading="lazy" width="1280" height="889"></div>
+          </div>
+          <p class="frame__cap" aria-live="polite">Accueil</p>
+          <div class="thumbs" role="group" aria-label="Captures de CVFlash"><button class="thumb is-on" type="button" data-src="assets/shots/cvflash-accueil.webp" data-cap="Accueil" aria-label="Voir : Accueil"><img src="assets/shots/cvflash-accueil.webp" alt="" loading="lazy" width="160" height="111"><span>Accueil</span></button><button class="thumb" type="button" data-src="assets/shots/cvflash-editeur.webp" data-cap="Éditeur et aperçu" aria-label="Voir : Éditeur et aperçu"><img src="assets/shots/cvflash-editeur.webp" alt="" loading="lazy" width="160" height="111"><span>Éditeur et aperçu</span></button><button class="thumb" type="button" data-src="assets/shots/cvflash-installer.webp" data-cap="Installation" aria-label="Voir : Installation"><img src="assets/shots/cvflash-installer.webp" alt="" loading="lazy" width="160" height="111"><span>Installation</span></button></div>
+        </div>
+      </div>
+    </article>
+    <article class="case" id="avispro" style="--a:#e11d48;--b:#fb7185" data-name="AvisPro Bénin">
+      <div class="case__glow" aria-hidden="true"></div>
+      <div class="case__grid">
+        <div class="case__text reveal">
+          <div class="case__top"><span class="case__no">03<i>/09</i></span><span class="case__kind">Full-stack · Laravel + React</span></div>
+          <div class="case__brand"><img src="assets/icons/avispro.png" alt="" width="56" height="56"><h3>AvisPro Bénin</h3></div>
+          <p class="case__tag">La confiance des PME béninoises, avis après avis.</p>
+          <p class="case__desc">Plateforme d’avis clients inspirée de Trustpilot : pages publiques par entreprise, avis vérifiés par code, réponses publiques et modération, avec un widget à coller sur n’importe quel site.</p>
+          <ul class="case__feats"><li>Avis sans compte, un seul par jour et par entreprise (IP hachée en HMAC)</li><li>Badge « avis vérifié » grâce à des codes à usage unique</li><li>Statistiques : note moyenne, évolution sur 6 mois, avis sans réponse</li><li>Widget JavaScript intégrable (CORS activé), modération des signalements</li></ul>
+          <ul class="chips" aria-label="Technologies"><li>Laravel 12</li><li>React 19</li><li>Sanctum</li><li>MySQL</li><li>Tailwind 4</li><li>PHPUnit</li></ul>
+          <dl class="case__metrics"><div><dd data-metric>23</dd><dt>routes API</dt></div><div><dd data-metric>8</dd><dt>tests PHPUnit</dt></div><div><dd data-metric>222</dd><dt>avis de démo</dt></div></dl>
+          <div class="case__cta">
+            <a class="btn btn--main" href="https://mes-apps.wuaze.com/avispro/" target="_blank" rel="noopener" data-magnetic>Ouvrir la démo <span aria-hidden="true">↗</span></a>
+            <a class="btn btn--ghost" href="https://mes-apps.wuaze.com/avispro/#/installer" target="_blank" rel="noopener">⬇ Installer</a>
+            <a class="btn btn--ghost" href="https://github.com/jeanmarie2006/avispro" target="_blank" rel="noopener">Code source</a>
+          </div>
+          <p class="case__host">Hébergé sur InfinityFree · installable sur mobile, tablette et ordinateur</p>
+        </div>
+        <div class="case__visual reveal">
+          <div class="frame" data-tilt>
+            <div class="frame__bar"><i></i><i></i><i></i><span class="frame__url"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>mes-apps.wuaze.com/avispro</span></div>
+            <div class="frame__screen"><img class="frame__img" src="assets/shots/avispro-accueil.webp" alt="Capture de AvisPro Bénin : Accueil" loading="lazy" width="1280" height="889"></div>
+          </div>
+          <p class="frame__cap" aria-live="polite">Accueil</p>
+          <div class="thumbs" role="group" aria-label="Captures de AvisPro Bénin"><button class="thumb is-on" type="button" data-src="assets/shots/avispro-accueil.webp" data-cap="Accueil" aria-label="Voir : Accueil"><img src="assets/shots/avispro-accueil.webp" alt="" loading="lazy" width="160" height="111"><span>Accueil</span></button><button class="thumb" type="button" data-src="assets/shots/avispro-entreprise.webp" data-cap="Page entreprise" aria-label="Voir : Page entreprise"><img src="assets/shots/avispro-entreprise.webp" alt="" loading="lazy" width="160" height="111"><span>Page entreprise</span></button><button class="thumb" type="button" data-src="assets/shots/avispro-avis.webp" data-cap="Dépôt d’avis" aria-label="Voir : Dépôt d’avis"><img src="assets/shots/avispro-avis.webp" alt="" loading="lazy" width="160" height="111"><span>Dépôt d’avis</span></button><button class="thumb" type="button" data-src="assets/shots/avispro-tableau-de-bord.webp" data-cap="Statistiques" aria-label="Voir : Statistiques"><img src="assets/shots/avispro-tableau-de-bord.webp" alt="" loading="lazy" width="160" height="111"><span>Statistiques</span></button><button class="thumb" type="button" data-src="assets/shots/avispro-moderation.webp" data-cap="Modération" aria-label="Voir : Modération"><img src="assets/shots/avispro-moderation.webp" alt="" loading="lazy" width="160" height="111"><span>Modération</span></button></div>
+        </div>
+      </div>
+    </article>
+    <article class="case" id="stockfacile" style="--a:#0ea5e9;--b:#22d3ee" data-name="StockFacile">
+      <div class="case__glow" aria-hidden="true"></div>
+      <div class="case__grid">
+        <div class="case__text reveal">
+          <div class="case__top"><span class="case__no">04<i>/09</i></span><span class="case__kind">Full-stack · Laravel + Blade</span></div>
+          <div class="case__brand"><img src="assets/icons/stockfacile.png" alt="" width="56" height="56"><h3>StockFacile</h3></div>
+          <p class="case__tag">Ne tombez plus jamais en rupture de stock.</p>
+          <p class="case__desc">Gestion de stock pour boutique : mouvements tracés, alertes de rupture, bons de commande fournisseur en PDF et rapports mensuels. Application rendue côté serveur avec rôles gérant et vendeur.</p>
+          <ul class="case__feats"><li>Entrées et sorties avec historique complet, sortie &gt; stock refusée</li><li>Alertes orange sous le seuil, rouge à zéro, tableau de bord sur 14 jours</li><li>Bons de commande générés par fournisseur, PDF, réception qui met à jour le stock</li><li>Recherche par code-barres (lecteur USB), rapport PDF et CSV</li></ul>
+          <ul class="chips" aria-label="Technologies"><li>Laravel 12</li><li>Blade</li><li>DomPDF</li><li>MySQL</li><li>Tailwind 4</li><li>PHPUnit</li></ul>
+          <dl class="case__metrics"><div><dd data-metric>33</dd><dt>routes</dt></div><div><dd data-metric>10</dd><dt>tests PHPUnit</dt></div><div><dd data-metric>2</dd><dt>rôles</dt></div></dl>
+          <div class="case__cta">
+            <a class="btn btn--main" href="https://mes-apps.wuaze.com/stockfacile/" target="_blank" rel="noopener" data-magnetic>Ouvrir la démo <span aria-hidden="true">↗</span></a>
+            <a class="btn btn--ghost" href="https://mes-apps.wuaze.com/stockfacile/installer" target="_blank" rel="noopener">⬇ Installer</a>
+            <a class="btn btn--ghost" href="https://github.com/jeanmarie2006/stockfacile" target="_blank" rel="noopener">Code source</a>
+          </div>
+          <p class="case__host">Hébergé sur InfinityFree · installable sur mobile, tablette et ordinateur</p>
+        </div>
+        <div class="case__visual reveal">
+          <div class="frame" data-tilt>
+            <div class="frame__bar"><i></i><i></i><i></i><span class="frame__url"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>mes-apps.wuaze.com/stockfacile</span></div>
+            <div class="frame__screen"><img class="frame__img" src="assets/shots/stockfacile-accueil.webp" alt="Capture de StockFacile : Accueil" loading="lazy" width="1280" height="889"></div>
+          </div>
+          <p class="frame__cap" aria-live="polite">Accueil</p>
+          <div class="thumbs" role="group" aria-label="Captures de StockFacile"><button class="thumb is-on" type="button" data-src="assets/shots/stockfacile-accueil.webp" data-cap="Accueil" aria-label="Voir : Accueil"><img src="assets/shots/stockfacile-accueil.webp" alt="" loading="lazy" width="160" height="111"><span>Accueil</span></button><button class="thumb" type="button" data-src="assets/shots/stockfacile-tableau-de-bord.webp" data-cap="Tableau de bord" aria-label="Voir : Tableau de bord"><img src="assets/shots/stockfacile-tableau-de-bord.webp" alt="" loading="lazy" width="160" height="111"><span>Tableau de bord</span></button><button class="thumb" type="button" data-src="assets/shots/stockfacile-produits.webp" data-cap="Produits" aria-label="Voir : Produits"><img src="assets/shots/stockfacile-produits.webp" alt="" loading="lazy" width="160" height="111"><span>Produits</span></button><button class="thumb" type="button" data-src="assets/shots/stockfacile-mouvement.webp" data-cap="Mouvement de stock" aria-label="Voir : Mouvement de stock"><img src="assets/shots/stockfacile-mouvement.webp" alt="" loading="lazy" width="160" height="111"><span>Mouvement de stock</span></button><button class="thumb" type="button" data-src="assets/shots/stockfacile-rapports.webp" data-cap="Rapports" aria-label="Voir : Rapports"><img src="assets/shots/stockfacile-rapports.webp" alt="" loading="lazy" width="160" height="111"><span>Rapports</span></button></div>
+        </div>
+      </div>
+    </article>
+    <article class="case" id="covoitbenin" style="--a:#f59e0b;--b:#f97316" data-name="CovoitBénin">
+      <div class="case__glow" aria-hidden="true"></div>
+      <div class="case__grid">
+        <div class="case__text reveal">
+          <div class="case__top"><span class="case__no">05<i>/09</i></span><span class="case__kind">Full-stack · Laravel + React</span></div>
+          <div class="case__brand"><img src="assets/icons/covoitbenin.png" alt="" width="56" height="56"><h3>CovoitBénin</h3></div>
+          <p class="case__tag">Partagez la route, partagez les frais.</p>
+          <p class="case__desc">Covoiturage entre les villes du Bénin : recherche de trajets, réservation soumise à la confirmation du conducteur, messagerie, notation réciproque et carte interactive.</p>
+          <ul class="case__feats"><li>Conducteur ou passager, places confirmées jamais dépassées</li><li>Paiement Mobile Money simulé (MTN MoMo, Moov Money)</li><li>Carte Leaflet / OpenStreetMap et trajets récurrents</li><li>Téléphone partagé seulement après confirmation, notes après trajet effectué</li></ul>
+          <ul class="chips" aria-label="Technologies"><li>Laravel 12</li><li>React 19</li><li>Leaflet</li><li>Sanctum</li><li>MySQL</li><li>PHPUnit</li></ul>
+          <dl class="case__metrics"><div><dd data-metric>20</dd><dt>routes API</dt></div><div><dd data-metric>9</dd><dt>tests PHPUnit</dt></div><div><dd data-metric>2</dd><dt>opérateurs MoMo</dt></div></dl>
+          <div class="case__cta">
+            <a class="btn btn--main" href="https://mes-apps.wuaze.com/covoitbenin/" target="_blank" rel="noopener" data-magnetic>Ouvrir la démo <span aria-hidden="true">↗</span></a>
+            <a class="btn btn--ghost" href="https://mes-apps.wuaze.com/covoitbenin/#/installer" target="_blank" rel="noopener">⬇ Installer</a>
+            <a class="btn btn--ghost" href="https://github.com/jeanmarie2006/covoitbenin" target="_blank" rel="noopener">Code source</a>
+          </div>
+          <p class="case__host">Hébergé sur InfinityFree · installable sur mobile, tablette et ordinateur</p>
+        </div>
+        <div class="case__visual reveal">
+          <div class="frame" data-tilt>
+            <div class="frame__bar"><i></i><i></i><i></i><span class="frame__url"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>mes-apps.wuaze.com/covoitbenin</span></div>
+            <div class="frame__screen"><img class="frame__img" src="assets/shots/covoitbenin-accueil.webp" alt="Capture de CovoitBénin : Accueil" loading="lazy" width="1280" height="889"></div>
+          </div>
+          <p class="frame__cap" aria-live="polite">Accueil</p>
+          <div class="thumbs" role="group" aria-label="Captures de CovoitBénin"><button class="thumb is-on" type="button" data-src="assets/shots/covoitbenin-accueil.webp" data-cap="Accueil" aria-label="Voir : Accueil"><img src="assets/shots/covoitbenin-accueil.webp" alt="" loading="lazy" width="160" height="111"><span>Accueil</span></button><button class="thumb" type="button" data-src="assets/shots/covoitbenin-recherche.webp" data-cap="Recherche de trajets" aria-label="Voir : Recherche de trajets"><img src="assets/shots/covoitbenin-recherche.webp" alt="" loading="lazy" width="160" height="111"><span>Recherche de trajets</span></button><button class="thumb" type="button" data-src="assets/shots/covoitbenin-espace-conducteur.webp" data-cap="Espace conducteur" aria-label="Voir : Espace conducteur"><img src="assets/shots/covoitbenin-espace-conducteur.webp" alt="" loading="lazy" width="160" height="111"><span>Espace conducteur</span></button></div>
+        </div>
+      </div>
+    </article>
+    <article class="case" id="fitslot" style="--a:#f97316;--b:#ef4444" data-name="FitSlot">
+      <div class="case__glow" aria-hidden="true"></div>
+      <div class="case__grid">
+        <div class="case__text reveal">
+          <div class="case__top"><span class="case__no">06<i>/09</i></span><span class="case__kind">Full-stack · Laravel + React</span></div>
+          <div class="case__brand"><img src="assets/icons/fitslot.png" alt="" width="56" height="56"><h3>FitSlot</h3></div>
+          <p class="case__tag">Réservez votre séance. Bougez.</p>
+          <p class="case__desc">Réservation de séances de sport avec planning FullCalendar, capacité limitée, abonnements à séances et espace coach avec appel et statistiques de fréquentation.</p>
+          <ul class="case__feats"><li>Créneaux uniques ou répétés chaque semaine, doublons détectés</li><li>Annulation et report gratuits jusqu’à 2 h avant, séance rendue</li><li>Packs 5, 10 et mensuel illimité, paiement Mobile Money simulé</li><li>Rappels de la veille planifiés (commande Artisan) et statistiques coach</li></ul>
+          <ul class="chips" aria-label="Technologies"><li>Laravel 12</li><li>React 19</li><li>FullCalendar</li><li>Sanctum</li><li>MySQL</li><li>PHPUnit</li></ul>
+          <dl class="case__metrics"><div><dd data-metric>20</dd><dt>routes API</dt></div><div><dd data-metric>12</dd><dt>tests PHPUnit</dt></div><div><dd data-metric>3</dd><dt>formules</dt></div></dl>
+          <div class="case__cta">
+            <a class="btn btn--main" href="https://mes-apps.wuaze.com/fitslot/" target="_blank" rel="noopener" data-magnetic>Ouvrir la démo <span aria-hidden="true">↗</span></a>
+            <a class="btn btn--ghost" href="https://mes-apps.wuaze.com/fitslot/#/installer" target="_blank" rel="noopener">⬇ Installer</a>
+            <a class="btn btn--ghost" href="https://github.com/jeanmarie2006/fitslot" target="_blank" rel="noopener">Code source</a>
+          </div>
+          <p class="case__host">Hébergé sur InfinityFree · installable sur mobile, tablette et ordinateur</p>
+        </div>
+        <div class="case__visual reveal">
+          <div class="frame" data-tilt>
+            <div class="frame__bar"><i></i><i></i><i></i><span class="frame__url"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>mes-apps.wuaze.com/fitslot</span></div>
+            <div class="frame__screen"><img class="frame__img" src="assets/shots/fitslot-accueil.webp" alt="Capture de FitSlot : Accueil" loading="lazy" width="1280" height="889"></div>
+          </div>
+          <p class="frame__cap" aria-live="polite">Accueil</p>
+          <div class="thumbs" role="group" aria-label="Captures de FitSlot"><button class="thumb is-on" type="button" data-src="assets/shots/fitslot-accueil.webp" data-cap="Accueil" aria-label="Voir : Accueil"><img src="assets/shots/fitslot-accueil.webp" alt="" loading="lazy" width="160" height="111"><span>Accueil</span></button><button class="thumb" type="button" data-src="assets/shots/fitslot-planning.webp" data-cap="Planning" aria-label="Voir : Planning"><img src="assets/shots/fitslot-planning.webp" alt="" loading="lazy" width="160" height="111"><span>Planning</span></button><button class="thumb" type="button" data-src="assets/shots/fitslot-abonnement.webp" data-cap="Abonnements" aria-label="Voir : Abonnements"><img src="assets/shots/fitslot-abonnement.webp" alt="" loading="lazy" width="160" height="111"><span>Abonnements</span></button><button class="thumb" type="button" data-src="assets/shots/fitslot-coach.webp" data-cap="Espace coach" aria-label="Voir : Espace coach"><img src="assets/shots/fitslot-coach.webp" alt="" loading="lazy" width="160" height="111"><span>Espace coach</span></button></div>
+        </div>
+      </div>
+    </article>
+    <article class="case" id="facturo" style="--a:#3b82f6;--b:#38bdf8" data-name="Facturo">
+      <div class="case__glow" aria-hidden="true"></div>
+      <div class="case__grid">
+        <div class="case__text reveal">
+          <div class="case__top"><span class="case__no">07<i>/09</i></span><span class="case__kind">Full-stack · Laravel + React</span></div>
+          <div class="case__brand"><img src="assets/icons/facturo.png" alt="" width="56" height="56"><h3>Facturo</h3></div>
+          <p class="case__tag">Facturez en 2 minutes. Encaissez plus vite.</p>
+          <p class="case__desc">Mini-SaaS de facturation pour freelances et PME : devis, factures numérotées, PDF, relances automatiques et paiement en ligne par lien public. Chaque compte est isolé des autres.</p>
+          <ul class="case__feats"><li>Devis → facture en un clic, numérotation FAC-2026-0001, TVA calculée</li><li>Statut « en retard » calculé à l’échéance, relances des impayés</li><li>Lien de paiement public MTN MoMo / Moov Money (simulé)</li><li>Plans Gratuit et Pro, multi-devises, export comptable CSV</li></ul>
+          <ul class="chips" aria-label="Technologies"><li>Laravel 12</li><li>React 19</li><li>DomPDF</li><li>Sanctum</li><li>MySQL</li><li>PHPUnit</li></ul>
+          <dl class="case__metrics"><div><dd data-metric>30</dd><dt>routes API</dt></div><div><dd data-metric>11</dd><dt>tests PHPUnit</dt></div><div><dd data-metric>PDF</dd><dt>factures</dt></div></dl>
+          <div class="case__cta">
+            <a class="btn btn--main" href="https://mes-apps.wuaze.com/facturo/" target="_blank" rel="noopener" data-magnetic>Ouvrir la démo <span aria-hidden="true">↗</span></a>
+            <a class="btn btn--ghost" href="https://mes-apps.wuaze.com/facturo/#/installer" target="_blank" rel="noopener">⬇ Installer</a>
+            <a class="btn btn--ghost" href="https://github.com/jeanmarie2006/facturo" target="_blank" rel="noopener">Code source</a>
+          </div>
+          <p class="case__host">Hébergé sur InfinityFree · installable sur mobile, tablette et ordinateur</p>
+        </div>
+        <div class="case__visual reveal">
+          <div class="frame" data-tilt>
+            <div class="frame__bar"><i></i><i></i><i></i><span class="frame__url"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>mes-apps.wuaze.com/facturo</span></div>
+            <div class="frame__screen"><img class="frame__img" src="assets/shots/facturo-accueil.webp" alt="Capture de Facturo : Accueil" loading="lazy" width="1280" height="889"></div>
+          </div>
+          <p class="frame__cap" aria-live="polite">Accueil</p>
+          <div class="thumbs" role="group" aria-label="Captures de Facturo"><button class="thumb is-on" type="button" data-src="assets/shots/facturo-accueil.webp" data-cap="Accueil" aria-label="Voir : Accueil"><img src="assets/shots/facturo-accueil.webp" alt="" loading="lazy" width="160" height="111"><span>Accueil</span></button><button class="thumb" type="button" data-src="assets/shots/facturo-tableau-de-bord.webp" data-cap="Tableau de bord" aria-label="Voir : Tableau de bord"><img src="assets/shots/facturo-tableau-de-bord.webp" alt="" loading="lazy" width="160" height="111"><span>Tableau de bord</span></button><button class="thumb" type="button" data-src="assets/shots/facturo-factures.webp" data-cap="Factures" aria-label="Voir : Factures"><img src="assets/shots/facturo-factures.webp" alt="" loading="lazy" width="160" height="111"><span>Factures</span></button><button class="thumb" type="button" data-src="assets/shots/facturo-facture.webp" data-cap="Détail d’une facture" aria-label="Voir : Détail d’une facture"><img src="assets/shots/facturo-facture.webp" alt="" loading="lazy" width="160" height="111"><span>Détail d’une facture</span></button></div>
+        </div>
+      </div>
+    </article>
+    <article class="case" id="apprendo" style="--a:#8b5cf6;--b:#a78bfa" data-name="Apprendo">
+      <div class="case__glow" aria-hidden="true"></div>
+      <div class="case__grid">
+        <div class="case__text reveal">
+          <div class="case__top"><span class="case__no">08<i>/09</i></span><span class="case__kind">Full-stack · Laravel + React</span></div>
+          <div class="case__brand"><img src="assets/icons/apprendo.png" alt="" width="56" height="56"><h3>Apprendo</h3></div>
+          <p class="case__tag">Apprenez un métier. À votre rythme.</p>
+          <p class="case__desc">Marketplace de formations : les formateurs publient des cours, les apprenants s’inscrivent, suivent leur progression, réussissent des quiz et obtiennent un certificat PDF vérifiable.</p>
+          <ul class="case__feats"><li>Catalogue avec recherche, filtres et tris ; leçons texte ou vidéo</li><li>Quiz de fin de module (seuil de 60 %), bonnes réponses révélées après validation</li><li>Certificat PDF avec numéro unique et page de vérification publique</li><li>Espace formateur : inscrits, revenus, certificats, note moyenne</li></ul>
+          <ul class="chips" aria-label="Technologies"><li>Laravel 12</li><li>React 19</li><li>DomPDF</li><li>Sanctum</li><li>MySQL</li><li>PHPUnit</li></ul>
+          <dl class="case__metrics"><div><dd data-metric>31</dd><dt>routes API</dt></div><div><dd data-metric>10</dd><dt>tests PHPUnit</dt></div><div><dd data-metric>PDF</dd><dt>certificats</dt></div></dl>
+          <div class="case__cta">
+            <a class="btn btn--main" href="https://mes-apps.wuaze.com/apprendo/" target="_blank" rel="noopener" data-magnetic>Ouvrir la démo <span aria-hidden="true">↗</span></a>
+            <a class="btn btn--ghost" href="https://mes-apps.wuaze.com/apprendo/#/installer" target="_blank" rel="noopener">⬇ Installer</a>
+            <a class="btn btn--ghost" href="https://github.com/jeanmarie2006/apprendo" target="_blank" rel="noopener">Code source</a>
+          </div>
+          <p class="case__host">Hébergé sur InfinityFree · installable sur mobile, tablette et ordinateur</p>
+        </div>
+        <div class="case__visual reveal">
+          <div class="frame" data-tilt>
+            <div class="frame__bar"><i></i><i></i><i></i><span class="frame__url"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>mes-apps.wuaze.com/apprendo</span></div>
+            <div class="frame__screen"><img class="frame__img" src="assets/shots/apprendo-accueil.webp" alt="Capture de Apprendo : Accueil" loading="lazy" width="1280" height="889"></div>
+          </div>
+          <p class="frame__cap" aria-live="polite">Accueil</p>
+          <div class="thumbs" role="group" aria-label="Captures de Apprendo"><button class="thumb is-on" type="button" data-src="assets/shots/apprendo-accueil.webp" data-cap="Accueil" aria-label="Voir : Accueil"><img src="assets/shots/apprendo-accueil.webp" alt="" loading="lazy" width="160" height="111"><span>Accueil</span></button><button class="thumb" type="button" data-src="assets/shots/apprendo-catalogue.webp" data-cap="Catalogue" aria-label="Voir : Catalogue"><img src="assets/shots/apprendo-catalogue.webp" alt="" loading="lazy" width="160" height="111"><span>Catalogue</span></button><button class="thumb" type="button" data-src="assets/shots/apprendo-cours.webp" data-cap="Page d’un cours" aria-label="Voir : Page d’un cours"><img src="assets/shots/apprendo-cours.webp" alt="" loading="lazy" width="160" height="111"><span>Page d’un cours</span></button><button class="thumb" type="button" data-src="assets/shots/apprendo-lecteur.webp" data-cap="Lecteur de cours" aria-label="Voir : Lecteur de cours"><img src="assets/shots/apprendo-lecteur.webp" alt="" loading="lazy" width="160" height="111"><span>Lecteur de cours</span></button><button class="thumb" type="button" data-src="assets/shots/apprendo-mes-cours.webp" data-cap="Mes cours" aria-label="Voir : Mes cours"><img src="assets/shots/apprendo-mes-cours.webp" alt="" loading="lazy" width="160" height="111"><span>Mes cours</span></button><button class="thumb" type="button" data-src="assets/shots/apprendo-formateur.webp" data-cap="Espace formateur" aria-label="Voir : Espace formateur"><img src="assets/shots/apprendo-formateur.webp" alt="" loading="lazy" width="160" height="111"><span>Espace formateur</span></button></div>
+        </div>
+      </div>
+    </article>
+    <article class="case" id="flowboard" style="--a:#14b8a6;--b:#34d399" data-name="Flowboard">
+      <div class="case__glow" aria-hidden="true"></div>
+      <div class="case__grid">
+        <div class="case__text reveal">
+          <div class="case__top"><span class="case__no">09<i>/09</i></span><span class="case__kind">Full-stack · Laravel + React</span></div>
+          <div class="case__brand"><img src="assets/icons/flowboard.png" alt="" width="56" height="56"><h3>Flowboard</h3></div>
+          <p class="case__tag">Organisez votre projet. Glissez, déposez, avancez.</p>
+          <p class="case__desc">Gestion de tâches d’équipe façon Kanban : tableaux, listes et cartes déplaçables à la souris, au doigt ou au clavier, avec commentaires, pièces jointes et mises à jour en direct.</p>
+          <ul class="case__feats"><li>Glisser-déposer dnd-kit entre listes, enregistré immédiatement</li><li>Invitations par e-mail, commentaires, pièces jointes contrôlées</li><li>Mises à jour en direct : le tableau se rafraîchit quand un coéquipier agit</li><li>Historique d’activité, vue « Mes tâches », notifications d’échéance</li></ul>
+          <ul class="chips" aria-label="Technologies"><li>Laravel 12</li><li>React 19</li><li>dnd-kit</li><li>Sanctum</li><li>MySQL</li><li>PHPUnit</li></ul>
+          <dl class="case__metrics"><div><dd data-metric>31</dd><dt>routes API</dt></div><div><dd data-metric>11</dd><dt>tests PHPUnit</dt></div><div><dd data-metric>4 s</dd><dt>synchro live</dt></div></dl>
+          <div class="case__cta">
+            <a class="btn btn--main" href="https://mes-apps.wuaze.com/flowboard/" target="_blank" rel="noopener" data-magnetic>Ouvrir la démo <span aria-hidden="true">↗</span></a>
+            <a class="btn btn--ghost" href="https://mes-apps.wuaze.com/flowboard/#/installer" target="_blank" rel="noopener">⬇ Installer</a>
+            <a class="btn btn--ghost" href="https://github.com/jeanmarie2006/flowboard" target="_blank" rel="noopener">Code source</a>
+          </div>
+          <p class="case__host">Hébergé sur InfinityFree · installable sur mobile, tablette et ordinateur</p>
+        </div>
+        <div class="case__visual reveal">
+          <div class="frame" data-tilt>
+            <div class="frame__bar"><i></i><i></i><i></i><span class="frame__url"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>mes-apps.wuaze.com/flowboard</span></div>
+            <div class="frame__screen"><img class="frame__img" src="assets/shots/flowboard-accueil.webp" alt="Capture de Flowboard : Accueil" loading="lazy" width="1280" height="889"></div>
+          </div>
+          <p class="frame__cap" aria-live="polite">Accueil</p>
+          <div class="thumbs" role="group" aria-label="Captures de Flowboard"><button class="thumb is-on" type="button" data-src="assets/shots/flowboard-accueil.webp" data-cap="Accueil" aria-label="Voir : Accueil"><img src="assets/shots/flowboard-accueil.webp" alt="" loading="lazy" width="160" height="111"><span>Accueil</span></button><button class="thumb" type="button" data-src="assets/shots/flowboard-tableau.webp" data-cap="Tableau" aria-label="Voir : Tableau"><img src="assets/shots/flowboard-tableau.webp" alt="" loading="lazy" width="160" height="111"><span>Tableau</span></button><button class="thumb" type="button" data-src="assets/shots/flowboard-carte.webp" data-cap="Carte" aria-label="Voir : Carte"><img src="assets/shots/flowboard-carte.webp" alt="" loading="lazy" width="160" height="111"><span>Carte</span></button><button class="thumb" type="button" data-src="assets/shots/flowboard-tableaux.webp" data-cap="Mes tableaux" aria-label="Voir : Mes tableaux"><img src="assets/shots/flowboard-tableaux.webp" alt="" loading="lazy" width="160" height="111"><span>Mes tableaux</span></button><button class="thumb" type="button" data-src="assets/shots/flowboard-mes-taches.webp" data-cap="Mes tâches" aria-label="Voir : Mes tâches"><img src="assets/shots/flowboard-mes-taches.webp" alt="" loading="lazy" width="160" height="111"><span>Mes tâches</span></button></div>
+        </div>
+      </div>
+    </article>
+</section>
+
+<!-- ============ MÉTHODE ============ -->
+<section class="section method" id="methode">
+  <div class="section__head reveal">
+    <p class="eyebrow">Méthode</p>
+    <h2 class="title">Un même chemin, <em>neuf fois.</em></h2>
+  </div>
+  <ol class="steps">
+    <li class="step reveal"><span class="step__no">01</span><h3>Cadrer</h3><p>Je pars du cahier des charges à la lettre : fonctionnalités de base, puis bonus. Chaque règle métier est écrite avant le premier écran.</p></li>
+    <li class="step reveal"><span class="step__no">02</span><h3>Construire</h3><p>API Laravel, authentification Sanctum, validation serveur, puis interface React mobile d’abord, accessible au clavier et au toucher.</p></li>
+    <li class="step reveal"><span class="step__no">03</span><h3>Éprouver</h3><p>Tests PHPUnit et Vitest, puis parcours complets pilotés dans un vrai navigateur : chaque bug trouvé devient un test.</p></li>
+    <li class="step reveal"><span class="step__no">04</span><h3>Livrer</h3><p>Mise en ligne, application installable, README avec captures, collection Postman et code publié sur GitHub.</p></li>
+  </ol>
+</section>
+
+<!-- ============ COULISSES ============ -->
+<section class="section under" id="coulisses">
+  <div class="section__head reveal">
+    <p class="eyebrow">Sous le capot</p>
+    <h2 class="title">Ce qui se passe <em>derrière l’écran.</em></h2>
+    <p class="section__lead">Sept des neuf applications partagent la même architecture : une interface React installable qui dialogue en JSON avec une API Laravel, adossée à MySQL.</p>
+  </div>
+
+  <div class="arch reveal" role="img" aria-label="Schéma : le navigateur (React, PWA) appelle l’API Laravel en HTTPS et JSON ; l’API lit et écrit dans MySQL et génère des PDF.">
+    <div class="arch__node arch__node--a"><small>Navigateur</small><b>React 19 · PWA</b><span>Service worker, hors-ligne, installation</span></div>
+    <div class="arch__link"><span>HTTPS · JSON · jeton Bearer</span></div>
+    <div class="arch__node arch__node--b"><small>Serveur</small><b>Laravel 12 · API REST</b><span>Sanctum, validation, limitation de débit, DomPDF</span></div>
+    <div class="arch__link"><span>Eloquent · requêtes préparées</span></div>
+    <div class="arch__node arch__node--c"><small>Données</small><b>MySQL</b><span>Relations, index, isolation par compte</span></div>
+    <div class="arch__test"><span>PHPUnit</span><span>Vitest</span><span>Parcours navigateur (Puppeteer)</span><span>Collections Postman</span></div>
+  </div>
+
+  <div class="grid3">
+    <article class="tile reveal"><span class="tile__ico">🔐</span><h3>Sécurité</h3><p>Jetons Sanctum, rôles vérifiés à chaque requête, limitation de débit, champ piège anti-robots, texte nettoyé, adresses IP hachées, données isolées par compte et testées.</p></article>
+    <article class="tile reveal"><span class="tile__ico">✅</span><h3>Qualité</h3><p>82 tests automatisés, plus des parcours complets dans un vrai navigateur : glisser-déposer avec événements souris réels, PDF, exports, permissions.</p></article>
+    <article class="tile reveal"><span class="tile__ico">📲</span><h3>Installable</h3><p>Manifeste, icônes adaptatives, service worker : chaque application s’installe, s’ouvre en plein écran et reste utilisable hors connexion après la première visite.</p></article>
+    <article class="tile reveal"><span class="tile__ico">🧾</span><h3>Documents PDF</h3><p>Factures, bons de commande, certificats et rapports générés côté serveur avec DomPDF, numérotés et consultables en ligne.</p></article>
+    <article class="tile reveal"><span class="tile__ico">💳</span><h3>Mobile Money</h3><p>Parcours de paiement MTN MoMo et Moov Money simulés, prêts à être branchés sur un agrégateur réel sans refaire l’interface.</p></article>
+    <article class="tile reveal"><span class="tile__ico">⚡</span><h3>Réactivité</h3><p>Interface fluide, chargements différés, cache du service worker et mises à jour en direct (Flowboard) sans rechargement de page.</p></article>
+  </div>
+</section>
+
+<!-- ============ INSTALLER ============ -->
+<section class="section install" id="installer">
+  <div class="section__head reveal">
+    <p class="eyebrow">Essayez-les</p>
+    <h2 class="title">Installez-les <em>sur votre appareil.</em></h2>
+    <p class="section__lead">Scannez un code avec votre téléphone : l’application s’ouvre sur sa page d’installation. Aucun magasin d’applications, aucun compte, gratuit.</p>
+  </div>
+  <div class="tabs reveal" role="tablist" aria-label="Plateforme">
+    <button class="tab is-on" role="tab" aria-selected="true" data-tab="android">Android</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="ios">iPhone · iPad</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="pc">Ordinateur</button>
+  </div>
+  <div class="tabpanels reveal">
+    <ol class="how is-on" data-panel="android"><li>Ouvrez l’application dans <b>Chrome</b>.</li><li>Touchez <b>« ⬇ Installer »</b> (ou menu ⋮ → <b>Installer l’application</b>).</li><li>L’icône apparaît sur votre écran d’accueil.</li></ol>
+    <ol class="how" data-panel="ios"><li>Ouvrez l’application dans <b>Safari</b>.</li><li>Touchez <b>Partager</b> puis <b>Sur l’écran d’accueil</b>.</li><li>Validez : l’application s’ouvre en plein écran.</li></ol>
+    <ol class="how" data-panel="pc"><li>Ouvrez l’application dans <b>Chrome ou Edge</b>.</li><li>Cliquez sur <b>« ⬇ Installer »</b> ou sur l’icône dans la barre d’adresse.</li><li>Elle s’ouvre dans sa propre fenêtre, comme un logiciel.</li></ol>
+  </div>
+  <div class="qrs"><a class="qr reveal" href="https://budgetclair-nine.vercel.app/installer" target="_blank" rel="noopener" style="--a:#10b981">
+          <img class="qr__code" src="assets/qr/budgetclair.svg" alt="QR code d’installation de BudgetClair" loading="lazy" width="132" height="132">
+          <span class="qr__name"><img src="assets/icons/budgetclair.png" alt="" width="22" height="22">BudgetClair</span>
+          <span class="qr__go">Scanner ou ouvrir ↗</span>
+        </a><a class="qr reveal" href="https://cvflash.vercel.app/installer" target="_blank" rel="noopener" style="--a:#6366f1">
+          <img class="qr__code" src="assets/qr/cvflash.svg" alt="QR code d’installation de CVFlash" loading="lazy" width="132" height="132">
+          <span class="qr__name"><img src="assets/icons/cvflash.png" alt="" width="22" height="22">CVFlash</span>
+          <span class="qr__go">Scanner ou ouvrir ↗</span>
+        </a><a class="qr reveal" href="https://mes-apps.wuaze.com/avispro/#/installer" target="_blank" rel="noopener" style="--a:#e11d48">
+          <img class="qr__code" src="assets/qr/avispro.svg" alt="QR code d’installation de AvisPro Bénin" loading="lazy" width="132" height="132">
+          <span class="qr__name"><img src="assets/icons/avispro.png" alt="" width="22" height="22">AvisPro Bénin</span>
+          <span class="qr__go">Scanner ou ouvrir ↗</span>
+        </a><a class="qr reveal" href="https://mes-apps.wuaze.com/stockfacile/installer" target="_blank" rel="noopener" style="--a:#0ea5e9">
+          <img class="qr__code" src="assets/qr/stockfacile.svg" alt="QR code d’installation de StockFacile" loading="lazy" width="132" height="132">
+          <span class="qr__name"><img src="assets/icons/stockfacile.png" alt="" width="22" height="22">StockFacile</span>
+          <span class="qr__go">Scanner ou ouvrir ↗</span>
+        </a><a class="qr reveal" href="https://mes-apps.wuaze.com/covoitbenin/#/installer" target="_blank" rel="noopener" style="--a:#f59e0b">
+          <img class="qr__code" src="assets/qr/covoitbenin.svg" alt="QR code d’installation de CovoitBénin" loading="lazy" width="132" height="132">
+          <span class="qr__name"><img src="assets/icons/covoitbenin.png" alt="" width="22" height="22">CovoitBénin</span>
+          <span class="qr__go">Scanner ou ouvrir ↗</span>
+        </a><a class="qr reveal" href="https://mes-apps.wuaze.com/fitslot/#/installer" target="_blank" rel="noopener" style="--a:#f97316">
+          <img class="qr__code" src="assets/qr/fitslot.svg" alt="QR code d’installation de FitSlot" loading="lazy" width="132" height="132">
+          <span class="qr__name"><img src="assets/icons/fitslot.png" alt="" width="22" height="22">FitSlot</span>
+          <span class="qr__go">Scanner ou ouvrir ↗</span>
+        </a><a class="qr reveal" href="https://mes-apps.wuaze.com/facturo/#/installer" target="_blank" rel="noopener" style="--a:#3b82f6">
+          <img class="qr__code" src="assets/qr/facturo.svg" alt="QR code d’installation de Facturo" loading="lazy" width="132" height="132">
+          <span class="qr__name"><img src="assets/icons/facturo.png" alt="" width="22" height="22">Facturo</span>
+          <span class="qr__go">Scanner ou ouvrir ↗</span>
+        </a><a class="qr reveal" href="https://mes-apps.wuaze.com/apprendo/#/installer" target="_blank" rel="noopener" style="--a:#8b5cf6">
+          <img class="qr__code" src="assets/qr/apprendo.svg" alt="QR code d’installation de Apprendo" loading="lazy" width="132" height="132">
+          <span class="qr__name"><img src="assets/icons/apprendo.png" alt="" width="22" height="22">Apprendo</span>
+          <span class="qr__go">Scanner ou ouvrir ↗</span>
+        </a><a class="qr reveal" href="https://mes-apps.wuaze.com/flowboard/#/installer" target="_blank" rel="noopener" style="--a:#14b8a6">
+          <img class="qr__code" src="assets/qr/flowboard.svg" alt="QR code d’installation de Flowboard" loading="lazy" width="132" height="132">
+          <span class="qr__name"><img src="assets/icons/flowboard.png" alt="" width="22" height="22">Flowboard</span>
+          <span class="qr__go">Scanner ou ouvrir ↗</span>
+        </a></div>
+</section>
+
+<!-- ============ À PROPOS ============ -->
+<section class="section about" id="apropos">
+  <div class="about__photo reveal"><img src="assets/photo.webp" alt="Portrait de Sedjame Vianney" width="360" height="450" loading="lazy"></div>
+  <div class="about__text reveal">
+    <p class="eyebrow">À propos</p>
+    <h2 class="title">Développeur web junior, <em>exigence de senior.</em></h2>
+    <p>Je suis Sedjame Vianney, développeur web basé à Cotonou et Calavi. J’aime livrer des choses qui marchent vraiment : des applications testées, documentées, en ligne, avec un code propre que l’on peut lire et faire évoluer.</p>
+    <p>Je cherche un <strong>stage ou un premier poste</strong> dans une équipe où je peux apprendre vite et être utile tout de suite. J’ai aussi réalisé des sites vitrines et des projets de hackathon.</p>
+    <div class="about__cta">
+      <a class="btn btn--ghost" href="https://sedjame-vianney.vercel.app" target="_blank" rel="noopener">Voir mes sites vitrines ↗</a>
+      <a class="btn btn--ghost" href="https://github.com/jeanmarie2006" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="contact__card reveal">
+    <p class="eyebrow">Contact</p>
+    <h2 class="contact__title">Un projet en tête ? <em>Construisons-le.</em></h2>
+    <p class="contact__lead">Répondez-moi sur WhatsApp ou par e-mail : je réponds vite.</p>
+    <div class="contact__cta">
+      <a class="btn btn--main btn--lg" href="https://wa.me/2290129179162" target="_blank" rel="noopener" data-magnetic>WhatsApp ↗</a>
+      <a class="btn btn--ghost btn--lg" href="mailto:sedjamevianney906@gmail.com">sedjamevianney906@gmail.com</a>
+    </div>
+    <ul class="contact__list">
+      <li><span>Téléphone</span><a href="tel:+2290129179162">+229 01 29 17 91 62</a></li>
+      <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/jean-marie-vianney-sedjame-5515733a5" target="_blank" rel="noopener">Jean-Marie Vianney Sedjame</a></li>
+      <li><span>GitHub</span><a href="https://github.com/jeanmarie2006" target="_blank" rel="noopener">jeanmarie2006</a></li>
+      <li><span>Lieu</span><b>Cotonou · Calavi, Bénin</b></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer class="footer"><span>© 2026 Sedjame Vianney</span><span>Conçu et codé à la main · HTML, CSS, JavaScript</span><a href="#top">Haut de page ↑</a></footer>
+
+<nav class="dock" id="dock" aria-label="Aller à une application"><a class="dock__item" href="#budgetclair" style="--a:#10b981" data-target="budgetclair" aria-label="BudgetClair"><img src="assets/icons/budgetclair.png" alt="" width="40" height="40"><span>BudgetClair</span></a><a class="dock__item" href="#cvflash" style="--a:#6366f1" data-target="cvflash" aria-label="CVFlash"><img src="assets/icons/cvflash.png" alt="" width="40" height="40"><span>CVFlash</span></a><a class="dock__item" href="#avispro" style="--a:#e11d48" data-target="avispro" aria-label="AvisPro Bénin"><img src="assets/icons/avispro.png" alt="" width="40" height="40"><span>AvisPro Bénin</span></a><a class="dock__item" href="#stockfacile" style="--a:#0ea5e9" data-target="stockfacile" aria-label="StockFacile"><img src="assets/icons/stockfacile.png" alt="" width="40" height="40"><span>StockFacile</span></a><a class="dock__item" href="#covoitbenin" style="--a:#f59e0b" data-target="covoitbenin" aria-label="CovoitBénin"><img src="assets/icons/covoitbenin.png" alt="" width="40" height="40"><span>CovoitBénin</span></a><a class="dock__item" href="#fitslot" style="--a:#f97316" data-target="fitslot" aria-label="FitSlot"><img src="assets/icons/fitslot.png" alt="" width="40" height="40"><span>FitSlot</span></a><a class="dock__item" href="#facturo" style="--a:#3b82f6" data-target="facturo" aria-label="Facturo"><img src="assets/icons/facturo.png" alt="" width="40" height="40"><span>Facturo</span></a><a class="dock__item" href="#apprendo" style="--a:#8b5cf6" data-target="apprendo" aria-label="Apprendo"><img src="assets/icons/apprendo.png" alt="" width="40" height="40"><span>Apprendo</span></a><a class="dock__item" href="#flowboard" style="--a:#14b8a6" data-target="flowboard" aria-label="Flowboard"><img src="assets/icons/flowboard.png" alt="" width="40" height="40"><span>Flowboard</span></a></nav>
+<script src="script.js"></script>
+</body>
+</html>
